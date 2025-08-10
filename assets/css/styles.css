@@ -1,0 +1,21 @@
+:root {
+  --brand: #0d6efd;
+}
+
+body { background-color: #f8f9fa; }
+
+.tool-card { transition: transform .12s ease, box-shadow .12s ease; }
+.tool-card:hover { transform: translateY(-2px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); }
+
+.category-title { border-left: 4px solid var(--brand); padding-left: .5rem; }
+
+.ad-slot { min-height: 90px; display: flex; align-items: center; justify-content: center; }
+.ad-placeholder { width: 100%; min-height: 90px; background: repeating-linear-gradient(45deg,#eee,#eee 10px,#f8f9fa 10px,#f8f9fa 20px); color: #6c757d; display:flex; align-items:center; justify-content:center; border: 1px dashed #ced4da; }
+
+.tool-container { background: #fff; border-radius: .5rem; padding: 1rem; box-shadow: 0 .25rem .75rem rgba(0,0,0,.05); }
+
+#globalSearchInput { width: 260px; }
+
+@media (max-width: 576px) {
+  #globalSearchInput { width: 100%; margin-top: .5rem; }
+}
