@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MultiTools - Free Online Tools Suite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/css/styles.css" rel="stylesheet">
+  <meta name="description" content="A fast, free collection of image tools, text utilities, calculators, and more.">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="container my-4">
+    <div class="ad-slot ad-top mb-3">
+      <div class="ad-placeholder">Top Banner Ad</div>
+    </div>
+
+    <div class="mb-4">
+      <input id="pageSearch" class="form-control form-control-lg" type="search" placeholder="Search tools..." oninput="filterTools(this.value)">
+    </div>
+
+    <section id="image-tools" class="mb-5">
+      <h2 class="h4 mb-3 category-title">Image Tools</h2>
+      <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <div class="col">
+          <a href="/tools/image-to-png.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="image convert png photo">
+              <div class="card-body">
+                <h3 class="card-title h6">Image to PNG Converter</h3>
+                <p class="card-text small text-muted">Convert any image to PNG.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/image-to-jpg.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="image convert jpg jpeg photo">
+              <div class="card-body">
+                <h3 class="card-title h6">Image to JPG Converter</h3>
+                <p class="card-text small text-muted">Convert images to JPG with quality control.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/image-resizer.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="image resize scale dimensions">
+              <div class="card-body">
+                <h3 class="card-title h6">Image Resizer</h3>
+                <p class="card-text small text-muted">Resize images by width/height.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/image-compressor.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="image compress optimize reduce size jpeg webp">
+              <div class="card-body">
+                <h3 class="card-title h6">Image Compressor</h3>
+                <p class="card-text small text-muted">Compress images with adjustable quality.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/image-cropper.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="image crop cut trim canvas">
+              <div class="card-body">
+                <h3 class="card-title h6">Image Cropper</h3>
+                <p class="card-text small text-muted">Crop images to custom dimensions.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="text-tools" class="mb-5">
+      <h2 class="h4 mb-3 category-title">Text Tools</h2>
+      <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <div class="col">
+          <a href="/tools/word-counter.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="text words counter count reading time">
+              <div class="card-body">
+                <h3 class="card-title h6">Word Counter</h3>
+                <p class="card-text small text-muted">Count words, characters, and reading time.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/character-counter.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="text characters length unique spaces">
+              <div class="card-body">
+                <h3 class="card-title h6">Character Counter</h3>
+                <p class="card-text small text-muted">Count characters with or without spaces.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/case-converter.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="text case upper lower title sentence">
+              <div class="card-body">
+                <h3 class="card-title h6">Case Converter</h3>
+                <p class="card-text small text-muted">Uppercase, lowercase, title case, and more.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/remove-spaces.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="text cleanup extra spaces line breaks normalize">
+              <div class="card-body">
+                <h3 class="card-title h6">Remove Extra Spaces</h3>
+                <p class="card-text small text-muted">Trim, normalize spaces and line breaks.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/fancy-text.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="text fancy unicode stylish fonts">
+              <div class="card-body">
+                <h3 class="card-title h6">Fancy Text Generator</h3>
+                <p class="card-text small text-muted">Create stylized text variations.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculators" class="mb-5">
+      <h2 class="h4 mb-3 category-title">Calculators & Converters</h2>
+      <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <div class="col">
+          <a href="/tools/percentage-calculator.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="math percent percentage increase decrease">
+              <div class="card-body">
+                <h3 class="card-title h6">Percentage Calculator</h3>
+                <p class="card-text small text-muted">Find percentages and changes.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/age-calculator.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="age date of birth years months days">
+              <div class="card-body">
+                <h3 class="card-title h6">Age Calculator</h3>
+                <p class="card-text small text-muted">Calculate exact age from DOB.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/bmi-calculator.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="health bmi body mass index weight height">
+              <div class="card-body">
+                <h3 class="card-title h6">BMI Calculator</h3>
+                <p class="card-text small text-muted">Compute BMI and category.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/loan-emi-calculator.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="loan emi mortgage finance interest payment">
+              <div class="card-body">
+                <h3 class="card-title h6">Loan EMI Calculator</h3>
+                <p class="card-text small text-muted">Monthly payment, totals, and schedule.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/currency-converter.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="currency forex convert rates usd eur inr">
+              <div class="card-body">
+                <h3 class="card-title h6">Currency Converter</h3>
+                <p class="card-text small text-muted">Live exchange rates with fallback.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="misc" class="mb-5">
+      <h2 class="h4 mb-3 category-title">Miscellaneous & Utility</h2>
+      <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <div class="col">
+          <a href="/tools/qr-code-generator.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="qr code generator scan">
+              <div class="card-body">
+                <h3 class="card-title h6">QR Code Generator</h3>
+                <p class="card-text small text-muted">Create QR codes instantly.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/youtube-thumbnail-downloader.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="youtube thumbnail download video">
+              <div class="card-body">
+                <h3 class="card-title h6">YouTube Thumbnail Downloader</h3>
+                <p class="card-text small text-muted">Grab thumbnails in all sizes.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/meme-generator.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="meme image text top bottom generator">
+              <div class="card-body">
+                <h3 class="card-title h6">Meme Generator</h3>
+                <p class="card-text small text-muted">Add text to images and export.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/password-generator.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="password generate secure random strong">
+              <div class="card-body">
+                <h3 class="card-title h6">Password Generator</h3>
+                <p class="card-text small text-muted">Create strong, customizable passwords.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="/tools/random-number-generator.html" class="text-decoration-none">
+            <div class="card tool-card h-100" data-tool-card data-tags="random number generator rng unique">
+              <div class="card-body">
+                <h3 class="card-title h6">Random Number Generator</h3>
+                <p class="card-text small text-muted">Generate random numbers with options.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-slot ad-bottom mt-4">
+      <div class="ad-placeholder">Bottom Banner Ad</div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
